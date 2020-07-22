@@ -6,13 +6,18 @@
     <div v-for="item in features" :key="item.id">
       {{ item.name }}
     </div>
+    <a-button type="primary">
+      Primary
+    </a-button>
   </div>
 </template>
 
 <script lang="ts">
 import { State, Action, Mutation } from 'vuex-class'
 import { Component, Vue } from 'vue-property-decorator'
+import { Button } from 'ant-design-vue'
 
+Vue.use(Button)
 @Component
 export default class Test extends Vue {
   @State features!: string[]

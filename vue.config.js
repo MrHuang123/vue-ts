@@ -1,4 +1,12 @@
 module.exports = {
+  // 配置less
+  css: {
+    loaderOptions: {
+        less: {
+            javascriptEnabled: true,
+        }
+    }
+  },
   devServer: {
     before(app) {
       app.get('/api/list', (req, res) => {
