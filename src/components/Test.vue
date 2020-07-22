@@ -4,7 +4,7 @@
     <p>Test 组件 vuex 测试</p>
     <input type="text" @keydown.enter="addFeature" />
     <div v-for="item in features" :key="item.id">
-      {{ item.name }}
+      {{ height }}
     </div>
   </div>
 </template>
@@ -16,6 +16,7 @@ import { Component, Vue } from 'vue-property-decorator'
 @Component
 export default class Test extends Vue {
   @State features!: string[]
+  @State height!: number
   @Action addFeatureAction: any
   @Mutation addFeatureMutation: any
 

@@ -45,11 +45,10 @@ export default class HelloWorld extends Vue {
     event.target.value = ''
   }
 
-  @Watch('msg')
-  onMsgChange(newVal: string, oldVal: string) {
-    console.log(111)
-    console.log('msg change: new msg-' + newVal + ', old msg-' + oldVal)
-  }
+  // @Watch('msg')
+  // onMsgChange(newVal: string, oldVal: string) {
+  //   console.log('msg change: new msg-' + newVal + ', old msg-' + oldVal)
+  // }
 
   created() {
     axios.get<Feature[]>('/api/list').then(res => {
