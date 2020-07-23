@@ -44,7 +44,6 @@ const STATE = {
   secretStatus: localStorage.getItem('secretStatus') || '',
   collegeId: localStorage.getItem('collegeId') || '',
   toggled: Boolean(localStorage.isToggled),
-
   secretList: [
     {
       name: '公开',

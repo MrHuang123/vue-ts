@@ -2,7 +2,7 @@
   <div class="p-login p-f-c h-per-100 w-per-100 m-no p-no f-c login-box">
     <!-- <div>
       <div class="f-s-c herder_box p-l20">
-        <img class="w-30" src="../assets/logo.png" />
+        <img class="w-30" src="../../assets/logo.png" />
         <p class="c-fff f-s-24 m-b-0 m-r-20">多语智能教学同传平台</p>
         <p  class="c-fff f-s-24 m-b-0 m-r-20">后台管理系统</p>
       </div>
@@ -22,7 +22,7 @@ export default class Login extends Vue {
 </script>
 <style lang="stylus">
 .p-login
-  background: url('../assets/bg1.png') #ccc no-repeat center center;
+  background: url('../../assets/bg1.png') #ccc no-repeat center center;
   background-size: 100% 100%;
   .herder_box
     height: 60px

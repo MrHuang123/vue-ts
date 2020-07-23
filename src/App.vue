@@ -1,8 +1,5 @@
 <template>
   <div id="app" class="h-per-100 o-h">
-    <!-- <HelloWorld :msg="msg" @addFeature="handleAddFeature" />
-    <Test />
-    <Decor msg="this is a msg from app.vue" /> -->
     <router-view />
   </div>
 </template>
@@ -12,8 +9,8 @@ import { Component, Vue } from 'vue-property-decorator'
 import HelloWorld from './components/HelloWorld.vue'
 import Test from './components/Test.vue'
 import Decor from './components/Decor.vue'
-import { Button } from 'ant-design-vue';
-Vue.use( Button )
+import { Button } from 'ant-design-vue'
+Vue.use(Button)
 @Component({
   components: {
     HelloWorld,
@@ -36,5 +33,3 @@ export default class App extends Vue {
 </script>
 
 <style lang="stylus"></style>
-
-
