@@ -1,16 +1,12 @@
 <template>
-  <div>
+  <div class="h-per-100">
     <a-row>
       <Header></Header>
     </a-row>
-    <a-row>
-      <a-col :span="4">
-        <navLeft />
-      </a-col>
-      <a-col :span="20">
-        <router-view />
-      </a-col>
-    </a-row>
+    <section class="f-s h-per-100">
+      <navLeft />
+      <router-view class="f-1 p-20" />
+    </section>
   </div>
 </template>
 <script lang="ts">

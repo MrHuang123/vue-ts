@@ -1,17 +1,16 @@
 <template>
-  <div class="w-200 h-per-100">
-    <a-button
+  <div class="w-200 h-per-100 bg-color-fff o-a">
+    <!-- <a-button
       type="primary"
       style="margin-bottom: 16px"
       @click="toggleCollapsed"
     >
       <a-icon :type="collapsed ? 'menu-unfold' : 'menu-fold'" />
-    </a-button>
+    </a-button> -->
     <a-menu
       :default-selected-keys="['1']"
       :default-open-keys="['sub1']"
       mode="inline"
-      theme="dark"
       :inline-collapsed="collapsed"
     >
       <a-menu-item key="1">
