@@ -4,7 +4,7 @@
       <img class="w-160 " src="../../assets/logo.png" />
     </section>
     <section class="f-1 f-b-c">
-      <p class="f-s-18 c-fff p-l-20">多语智能教学同传平台</p>
+      <p class="f-s-18 c-fff p-l-20">多语智能教学同传平台后台管理系统</p>
     </section>
   </header>
 </template>
