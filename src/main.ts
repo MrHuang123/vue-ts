@@ -8,6 +8,8 @@ import routes from './router/index'
 import '@/style/APP.styl'
 
 import App from './App.vue'
+
+import '@/mixin/function';
 // import './test'
 Component.registerHooks([
   'beforeRouteEnter',
