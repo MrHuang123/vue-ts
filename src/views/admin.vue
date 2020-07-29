@@ -1,6 +1,6 @@
 <template>
   <div class="h-per-100 admin w-per-100">
-    <!-- <a-row>
+    <a-row>
       <Header></Header>
     </a-row>
     <section class="f-s main">
@@ -8,8 +8,7 @@
       <div class="h-per-100 w-per-100 p-20">
         <router-view class="w-per-100 bg-color-fff p-10 " />
       </div>
-    </section> -->
-    <a-range-picker />
+    </section>
   </div>
 </template>
 <script lang="ts">
