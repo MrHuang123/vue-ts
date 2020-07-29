@@ -15,9 +15,7 @@
 <script lang="ts">
 import { State, Action, Mutation } from 'vuex-class'
 import { Component, Vue } from 'vue-property-decorator'
-import { Button } from 'ant-design-vue'
 
-Vue.use(Button)
 @Component
 export default class Test extends Vue {
   @State features!: string[]

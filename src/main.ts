@@ -6,7 +6,8 @@ import VueRouter from 'vue-router'
 import routes from './router/index'
 
 import '@/style/APP.styl'
-
+// vue-antdesign 按需加载
+import '@/core/user'
 import App from './App.vue'
 
 import '@/mixin/function';

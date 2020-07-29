@@ -21,21 +21,21 @@
         </div>
       </div>
     </div>
-    <div class="layout-list-item h-per-100">
-        <vue-scroll>
-            <ul>
-                <li v-for='i in 100' :key='i' class="p-lr-18 p-t-18 c-p">
-                    <div class="m-b-10">
-                        <h5>测试语料库{{i}}</h5>
-                    </div>
-                    <p>英语/日语</p>
-                    <div class=''>
-                        <p class="t-r f-s-12">隗嚣魏</p>
-                        <p class="t-r f-s-12" >2020/07/29</p>
-                    </div>
-                </li>
-            </ul>
-        </vue-scroll>
+    <div class="layout-list-item">
+      <vue-scroll>
+        <ul>
+          <li v-for="i in 100" :key="i" class="c-p">
+            <div class="m-b-10">
+              <h5>测试语料库{{ i }}</h5>
+            </div>
+            <p>英语/日语</p>
+            <div class="">
+              <p class="t-r f-s-12">隗嚣魏</p>
+              <p class="t-r f-s-12">2020/07/29</p>
+            </div>
+          </li>
+        </ul>
+      </vue-scroll>
     </div>
     <!-- <div class="layout-list-item">
       <ul>
@@ -111,11 +111,6 @@
 </template>
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
-import { Button, Input, Icon, Select } from 'ant-design-vue'
-Vue.use(Button)
-  .use(Input)
-  .use(Icon)
-  .use(Select)
 export default class VMenu extends Vue {
   private onSearch() {}
 }
@@ -124,7 +119,8 @@ export default class VMenu extends Vue {
 .layout-list-box {
   display: flex;
   flex-direction: column;
-  height: 100%;
+  height: 100%
+  overflow hidden
   .layout-list-search {
     flex-shrink: 0;
     padding: 18px;
@@ -135,7 +131,8 @@ export default class VMenu extends Vue {
     flex-grow:1;
     position: relative;
     height: 0;
-    overflow-y: auto;
+    height 400px
+    // overflow-y: auto;
     ul{
         li{
             padding:16px;
