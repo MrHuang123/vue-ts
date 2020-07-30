@@ -31,6 +31,7 @@ const STATE = {
     { id: 1, name: '类型注解' },
     { id: 2, name: '编译型语言' }
   ],
+  currentKey: '/admin/userMangement',
   token: localStorage.getItem('token') || '',
   //头像
   picUrl: localStorage.getItem('picUrl') || '',
@@ -56,38 +57,37 @@ const STATE = {
     {
       name: '秘密',
       value: '2'
-    },
+    }
   ],
   langList: localStorage.getItem('langList') || [] //语言列表
 }
 
 const GETTERS = {
   containerHeight(state: Store.State) {
-    return state.height - 150;
+    return state.height - 150
   },
   listHeight(state: Store.State) {
-    return state.height - 248;
+    return state.height - 248
   }
 }
 
 const MUTATIONS = {
   changeKey(state: Store.State, payload: Common) {
     for (const i in payload) {
-      state[i] = null;
-      state[i] = payload[i];
+      state[i] = null
+      state[i] = payload[i]
     }
   },
   changeSize(state: Store.State) {
-    state.height = window.innerHeight;
-    state.width = window.innerWidth;
+    state.height = window.innerHeight
+    state.width = window.innerWidth
   },
   changeTitle(state: Store.State, title: string) {
-    state.title = title;
-  },
+    state.title = title
+  }
 }
 
-const ACTIONS = {
-}
+const ACTIONS = {}
 const store = {
   state: STATE,
   getters: GETTERS,

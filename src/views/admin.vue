@@ -6,7 +6,7 @@
     <section class="f-s main">
       <navLeft />
       <div class="h-per-100 w-per-100 p-20">
-        <router-view class="w-per-100 bg-color-fff p-10 " />
+        <router-view class="w-per-100 bg-color-fff p-18 " />
       </div>
     </section>
   </div>
